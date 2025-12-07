@@ -1,0 +1,145 @@
+\documentclass[12pt,a4paper]{report}
+
+% ==========================================================
+%                    PACKAGES
+% ==========================================================
+
+\usepackage[utf8]{inputenc}     % Encodage
+\usepackage[T1]{fontenc}        % Accents
+\usepackage[french]{babel}      % Langue française
+
+\usepackage{amsmath}            % Math
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx}           % Figures
+\usepackage{hyperref}           % Liens cliquables
+\usepackage{geometry}           % Marges
+\usepackage{siunitx}            % Unités
+\usepackage{caption}
+\usepackage{subcaption}
+
+\geometry{margin=2.5cm}
+
+% ==========================================================
+%                    DOCUMENT
+% ==========================================================
+
+\begin{document}
+
+\title{Étude des performances électrochimiques des cathodes lithium-ion par DFT}
+\author{Hajar Motahhir}
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+% ==========================================================
+%                CHAPITRE 1 : INTRODUCTION
+% ==========================================================
+
+\chapter{Introduction générale}
+\label{ch:introduction}
+
+
+Les besoins énergétiques mondiaux augmentent fortement en raison de l’industrialisation,
+de la transition énergétique et du développement des transports électriques.
+Les systèmes de stockage d’énergie deviennent ainsi essentiels pour assurer
+une exploitation efficace des ressources énergétiques.
+
+Les batteries lithium-ion (LIBs) sont actuellement les dispositifs de stockage les plus utilisés,
+en raison de leur haute densité énergétique, leur efficacité et leur longue durée de vie.
+
+La performance globale des LIBs dépend principalement de la nature des matériaux cathodiques,
+qui contrôlent la capacité, la tension, la stabilité structurale et les mécanismes électrochimiques.
+Cependant, les matériaux cathodiques classiques présentent encore des limitations :
+\begin{itemize}
+    \item faible stabilité à haute tension,
+    \item dégradation structurale,
+    \item perte de capacité,
+    \item coût élevé,
+    \item ou encore mécanismes redox complexes.
+\end{itemize}
+
+La conception de nouvelles cathodes à haute performance nécessite donc une compréhension profonde
+des propriétés structurales et électroniques à l’échelle atomique.
+Les approches théoriques, et en particulier la \emph{Density Functional Theory} (DFT),
+jouent un rôle essentiel pour explorer des matériaux,
+comparer différentes compositions et prédire leurs performances avant leur synthèse expérimentale.
+
+\section{Motivation}
+
+Les cathodes comme LiCoO$_2$, LiNiMnCoO$_2$ ou LiFePO$_4$ 
+sont largement utilisées mais souffrent encore de limitations.
+Le dopage ou la substitution dans les structures oxydes permet :
+\begin{itemize}
+    \item d’améliorer la stabilité,
+    \item d’augmenter la conductivité,
+    \item de modifier les mécanismes redox,
+    \item ou encore de réduire les barrières de diffusion.
+\end{itemize}
+
+La DFT fournit des outils robustes pour analyser ces effets,
+notamment les états électroniques, les mécanismes redox,
+les énergies de formation ou les tensions électrochimiques.
+
+\section{Problématique}
+
+Malgré les progrès réalisés,
+les mécanismes électroniques dans les cathodes,
+notamment les contributions métal–oxygène,
+restent encore mal compris.
+La présence de corrélations électroniques fortes dans les métaux de transition
+rend les analyses expérimentales complexes.
+
+La problématique générale de ce travail est donc :
+
+\begin{quote}
+\textit{Comment utiliser les calculs DFT pour prédire les performances électrochimiques 
+des cathodes lithium-ion et comprendre les effets du dopage sur leurs propriétés structurales et électroniques ?}
+\end{quote}
+
+\section{Objectifs}
+
+Les objectifs principaux de cette étude sont :
+\begin{enumerate}
+    \item Étudier les structures cristallines des cathodes,
+    \item Calculer les propriétés électroniques (bandes, DOS, PDOS),
+    \item Analyser les mécanismes redox,
+    \item Estimer les barrières de diffusion Li$^+$,
+    \item Calculer les tensions théoriques,
+    \item Étudier les effets du dopage (C, N, Si, P),
+    \item Identifier les matériaux prometteurs pour les LIBs.
+\end{enumerate}
+
+\section{Méthodologie générale}
+
+La méthodologie repose sur :
+\begin{itemize}
+    \item construction des modèles cristallins,
+    \item optimisation structurale,
+    \item calcul des états électroniques,
+    \item simulation de la dé-lithiation,
+    \item calcul des énergies,
+    \item analyse des mécanismes électrochimiques,
+    \item comparaison entre matériaux dopés et non dopés.
+\end{itemize}
+
+Les calculs sont réalisés à l’aide de codes ab initio comme WIEN2k ou VASP,
+utilisant des fonctionnelles GGA, GGA+U ou hybrides selon les besoins.
+
+\section{Organisation de la thèse}
+
+La thèse est structurée comme suit :
+
+\begin{description}
+    \item[Chapitre 1 :] Introduction générale.
+    \item[Chapitre 2 :] Bases théoriques de la DFT et méthodologie.
+    \item[Chapitre 3 :] Étude des cathodes non dopés.
+    \item[Chapitre 4 :] Effet du dopage sur les propriétés structurales et électroniques.
+    \item[Chapitre 5 :] Analyse électrochimique et mécanismes redox.
+    \item[Chapitre 6 :] Conclusions et perspectives.
+\end{description}
+
+\end{document}
